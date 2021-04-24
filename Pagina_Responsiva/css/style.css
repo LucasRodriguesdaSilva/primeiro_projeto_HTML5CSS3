@@ -1,0 +1,353 @@
+/* RESET */
+*{
+    margin: 0;
+    font-size: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+
+}
+ul{list-style: none;}
+body{background-color: #CEE4F2;}
+a{text-decoration: none;}
+img{max-width: 100%;}
+
+/* CONTAINER */
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+/* CORES */
+.bg-colors{
+    background: linear-gradient(to right,#95ACBF, #4D6173);
+}
+.bg-black{
+    background-color: #0D0D0D;
+}
+.bg-light{
+    background-color: #95ACBF;
+}
+
+/* CABECALHO */
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../img/logo-mobile.png) center center/56px no-repeat;
+    font-size: 0;
+}
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    color: #0D0D0D;
+    border-radius: 56px;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(13, 13, 13, 0.87);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.btn-close{
+    font-size: 1.5em;
+    color: #CEE4F2;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 3%;
+}
+.menu li a{
+    font-size: 2em;
+    color: #CEE4F2;
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 1px solid #95ACBF;
+}
+
+/* BANNER */
+.btn{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+    border-radius: 10px;
+
+}
+.banner{
+    background: linear-gradient(45deg, #FDCB89,#FBA96D, #E28C59, #B36A41,#834D2B);
+}
+.title{
+    width: 100%;
+}
+.title h2{
+    font-size: 2.5em;
+    color: #525559;
+    font-weight: 700;
+    text-align: center;
+}
+.title h3{
+    font-size: 1.5em;
+    color: #0D0D0D;    
+    text-align: justify;
+}
+.buttons{
+    width: 100%;
+    margin-top: 2%;
+}
+.buttons i{
+    float: right;
+}
+.btn-cadastrar{
+    color: #0D0D0D;
+}
+.btn-sobre{
+    color: #CEE4F2;
+    margin-top: 2%;
+}
+
+/* SERVIÇOS */
+.servicos{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background-color: #95ACBF;
+
+}
+.servico{
+    width: 100%;
+    text-align: justify;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.servico img{
+    border-radius: 10px;
+}
+.inner{
+    padding: 7%;
+}
+.inner a{
+    font-size: 1.5em;
+    color: #525559;
+    font-weight: 700;
+}
+.inner h4{
+    font-size: 1.2em;
+    color: #525559;
+    margin-top: 2%;
+}
+.inner p{
+    margin-top: 6%;
+    line-height: 1.5em;
+    color: #0D0D0D;
+    font-weight: 500;
+}
+.inner p strong{
+    color: #4D6173;
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* NEWSLETTER */
+.newsletter h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #CEE4F2;
+}
+.newsletter h3{
+    color: #CEE4F2;
+}
+.newsletter form{
+    margin-top: 3%;
+}
+.newsletter input{
+    color: #CEE4F2;
+    border: 1px solid rgba(82, 85, 89, 0.404);
+    padding: 3%;
+    border-radius: 10px;
+    width: 100%;
+}
+.newsletter button{
+    width: 100%;
+    color: #0D0D0D;
+    padding: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
+
+/* RODAPE */
+.social-icons a{
+    font-size: 1.2em;
+    color: rgba(82, 85, 89, 0.733);
+    margin-right: 3%;
+}
+.social-icons a:hover{
+    color: #CEE4F2;
+}
+.social-icons a:last-child{
+    margin-right: 0;
+}
+.copy{
+    margin-top: 2%;
+    color: rgba(206, 228, 242, 0.774);
+}
+/* DEVICES - SMARTPHONES */
+@media screen and (min-width: 520px) {
+    .logo{
+        width: 214px;
+        float: left;
+        background: url(../img/logo.png) center center/214px no-repeat;
+    }
+    .btn{
+        font-size: 1.8em;
+    }
+    .copy{
+        margin-top: 3%;
+    }
+    
+}
+
+/* DEVICES - TABLETS */
+@media screen and (min-width: 768px) {
+    .servico{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .servico:nth-child(2){
+        margin-right: 0;
+    }
+    .servico:nth-child(4){
+        margin-right: 0;
+    }
+    .newsletter h2{
+        font-size: 2em;
+    }
+    .newsletter h3{
+        font-size: 1.5em;
+    }
+    .newsletter input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .newsletter button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+    
+}
+
+/* DEVICES - TABLETS  and DESKTOPS */
+@media screen and (min-width: 960px){
+    .title{
+        width: 100%;
+        text-align: justify;
+    }
+    .title h2{
+        font-size: 3em;
+
+    }
+    .title h3{
+        font-size: 2em;
+    }
+    .btn-cadastrar{
+        width: 49%;
+        float: left;
+
+    }
+    .btn-sobre{
+        width: 49%;
+        float: right;
+        margin-top: 0;
+
+    }
+    .newsletter input{
+        width: 60%;
+        float: none;
+    }
+    .newsletter button{
+        width: 20%;
+        float: none;
+    }
+}
+
+/* DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1280px) {
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .title{
+        float: left;
+        width: 70%;
+        text-align: left;
+        padding: 1%;
+    }
+    .buttons{
+        float: right;
+        width: 29%;
+        margin-top: 1%;
+    }
+    .btn-cadastrar{
+        width: 100%;
+    }
+    .btn-sobre{
+        margin-top: 2%;
+        width: 100%;
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #CEE4F2;
+        display: block !important;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #0D0D0D;
+        font-size: 1em;
+        padding: 15px;
+    }
+    .menu li a:hover{
+        border: 1px solid #95ACBF;
+
+    }
+    .newsletter h3{
+        margin-top: 1%;
+    }
+}
