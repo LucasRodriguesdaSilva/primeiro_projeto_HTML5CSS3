@@ -15,4 +15,4 @@ DESKTOP            |  MOBILE
 
 
 Feito por: Lucas Rodrigues da Silva
-(www.linkedin.com/in/lucasrd-silva)
+[![Linkedin Badge](https://img.shields.io/badge/-Lucas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/lucasrd-silva)](www.linkedin.com/in/lucasrd-silva)
